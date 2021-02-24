@@ -1,0 +1,1 @@
+print("\n".join((aaa := lambda x, run: (("FizzBuzz" if not x % 15 else "Fizz" if not x % 3 else "Buzz" if not x % 5 else f"{x}"), *aaa(x+1, run)) if x <= run else "")(1, int(input(">")))))
